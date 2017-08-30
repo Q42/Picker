@@ -27,9 +27,9 @@ func pickLanguage() -> PickerPromise<Language> {
   let languageList = LanguageListController()
   self.present(languageList, animated: true, completion: nil)
 
-  return languageController.result
-    .then { _ in
-      languageList.dismiss(animated: true, completion: nil)
+  return languageList.result
+    .then { [weak self] _ in
+      languageList?.dismiss(animated: true, completion: nil)
     }
 }
 
