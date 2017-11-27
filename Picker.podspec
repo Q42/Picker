@@ -22,7 +22,7 @@ Pick a value using a promise, supporting user cancellation and system interrupti
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources"
-    ss.dependency "Promissum", "~> 1"
+    ss.dependency "Promissum", "~> 2"
   end
 
 end
