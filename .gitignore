@@ -28,3 +28,5 @@ Pods/
 # SPM
 .build/
 Packages
+Picker.xcodeproj
+

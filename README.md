@@ -1,7 +1,5 @@
 # Picker
 
-_NOTE: This library is a work in progress_
-
 Pick a value using a promise, supporting user cancellation and system interruption.
 
 Usage
@@ -35,6 +33,13 @@ func pickLanguage() -> PickerPromise<Language> {
 
 ```
 
+
+Releases
+--------
+
+ - **0.2.0** - 2018-08-21 - Swift 4.2 update
+ - **0.1.0** - 2017-06-05 - Initial public release
+ - 0.0.0 - 2017-04-24 - Initial private version for project at [Q42](http://q42.com)
 
 Licence & Credits
 -----------------

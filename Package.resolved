@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Promissum",
+        "repositoryURL": "https://github.com/tomlokhorst/Promissum",
+        "state": {
+          "branch": null,
+          "revision": "d53d63c3805553ef90e83748386e35d7a30c5940",
+          "version": "2.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
