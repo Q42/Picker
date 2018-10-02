@@ -28,6 +28,32 @@ public enum PickerResult<Value> {
   }
 }
 
+public protocol MappablePickerResult {
+  associatedtype Value
+  func map<NewValue>(_ transform: (Value) -> NewValue) -> PickerResult<NewValue>
+}
+
+extension PickerResult: MappablePickerResult {
+  public func map<NewValue>(_ transform: (Value) -> NewValue) -> PickerResult<NewValue> {
+    switch self {
+    case .completed(let value):
+      return .completed(transform(value))
+    case .cancelled:
+      return .cancelled
+    }
+  }
+}
+
+extension Promise where Value: MappablePickerResult, Error == PickerError {
+  public func map<NewValue>(_ transform: @escaping (Value.Value) -> NewValue) -> PickerPromise<NewValue> {
+    return self.map { $0.map(transform) }
+  }
+}
+
+func f(p: Picker<Int>) {
+  let q: PickerPromise<String> = p.promise.map { "\($0)" }
+}
+
 public class Picker<Value> {
 
   private let source = Promissum.PromiseSource<PickerResult<Value>, PickerError>()

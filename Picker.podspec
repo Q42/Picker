@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Picker"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.license      = "MIT"
 
   s.summary      = "Pick a value using a promise"
@@ -22,8 +22,8 @@ Pick a value using a promise, supporting user cancellation and system interrupti
   s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "Sources"
-    ss.dependency "Promissum", "~> 2"
+    ss.source_files  = "Sources/Picker/"
+    ss.dependency "Promissum", "~> 3"
   end
 
 end
