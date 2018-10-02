@@ -50,10 +50,6 @@ extension Promise where Value: MappablePickerResult, Error == PickerError {
   }
 }
 
-func f(p: Picker<Int>) {
-  let q: PickerPromise<String> = p.promise.map { "\($0)" }
-}
-
 public class Picker<Value> {
 
   private let source = Promissum.PromiseSource<PickerResult<Value>, PickerError>()

@@ -20,6 +20,7 @@ Pick a value using a promise, supporting user cancellation and system interrupti
   s.source          = { :git => "https://github.com/Q42/Picker.git", :tag => s.version }
   s.requires_arc    = true
   s.default_subspec = "Core"
+  s.swift_version   = '4.2'
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources/Picker/"
