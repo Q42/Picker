@@ -13,6 +13,8 @@ Pick a value using a promise, supporting user cancellation and system interrupti
   s.social_media_url  = "https://twitter.com/tomlokhorst"
   s.homepage          = "https://github.com/Q42/Picker"
 
+  s.pod_target_xcconfig = { 'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
+
   s.ios.deployment_target = '9.0'
   s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.11'
