@@ -1,16 +1,16 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
   name: "Picker",
+  products: [
+    .library(name: "Picker", targets: ["Picker"]),
+  ],
   dependencies: [
-    .package(url: "https://github.com/tomlokhorst/Promissum", from: "2.0.0")
+    .package(url: "https://github.com/tomlokhorst/Promissum", from: "4.0.0")
   ],
   targets: [
-    .target(
-      name: "Picker",
-      dependencies: ["Promissum"]
-    )
-  ],
-  swiftLanguageVersions: [4]
+    .target(name: "Picker", dependencies: ["Promissum"]),
+  ]
 )
+
