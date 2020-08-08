@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
   name: "Picker",
+  platforms: [
+    .macOS(.v10_11), .iOS(.v9), .tvOS(.v9), .watchOS(.v3)
+  ],
   products: [
     .library(name: "Picker", targets: ["Picker"]),
   ],

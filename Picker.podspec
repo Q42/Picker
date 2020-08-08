@@ -14,8 +14,9 @@ Pick a value using a promise, supporting user cancellation and system interrupti
   s.homepage          = "https://github.com/Q42/Picker"
 
   s.ios.deployment_target = '9.0'
-  s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.11'
+  s.tvos.deployment_target = '9.0'
+  s.watchos.deployment_target = '3.0'
 
   s.source          = { :git => "https://github.com/Q42/Picker.git", :tag => s.version }
   s.requires_arc    = true

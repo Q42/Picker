@@ -37,6 +37,7 @@ func pickLanguage() -> PickerPromise<Language> {
 Releases
 --------
 
+ - 0.3.1 - 2020-08-08 - Add platform versions
  - **0.3.0** - 2019-06-10 - Swift 5.1 update
  - **0.2.0** - 2018-08-21 - Swift 4.2 update
  - **0.1.0** - 2017-06-05 - Initial public release
