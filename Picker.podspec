@@ -25,7 +25,7 @@ Pick a value using a promise, supporting user cancellation and system interrupti
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources/Picker/"
-    ss.dependency "Promissum", "~> 4"
+    ss.dependency "Promissum", "~> 5"
   end
 
 end
