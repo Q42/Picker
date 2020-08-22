@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Picker"
-  s.version      = "0.3"
+  s.version      = "0.4"
   s.license      = "MIT"
 
   s.summary      = "Pick a value using a promise"
