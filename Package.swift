@@ -10,7 +10,7 @@ let package = Package(
     .library(name: "Picker", targets: ["Picker"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/tomlokhorst/Promissum", from: "5.0.0")
+    .package(url: "https://github.com/tomlokhorst/Promissum", from: "7.0.0")
   ],
   targets: [
     .target(name: "Picker", dependencies: ["Promissum"]),
