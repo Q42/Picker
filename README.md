@@ -37,6 +37,7 @@ func pickLanguage() -> PickerPromise<Language> {
 Releases
 --------
 
+ - **1.0.0** - 2022-01-12 - Depend on Promissum 7
  - **0.4.0** - 2020-08-22 - Depend on Promissum 5, minimum iOS 10
  - 0.3.1 - 2020-08-08 - Add platform versions
  - **0.3.0** - 2019-06-10 - Swift 5.1 update
